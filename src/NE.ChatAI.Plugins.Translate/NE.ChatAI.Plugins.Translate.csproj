@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>NE.ChatAI.Plugins.Translate</RootNamespace>
+    <Version Condition="'$(InMonorepo)' == 'true'">0.1.0</Version>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(InMonorepo)' == 'true'">
+    <!-- Private=false and ExcludeAssets=runtime keep host contracts out of the plugin archive so PluginLoadContext unifies them with the host. -->
+    <ProjectReference Include="..\..\..\..\src\NE.ChatAI.Plugins\NE.ChatAI.Plugins.csproj" Private="false" ExcludeAssets="runtime" />
+    <PackageReference Include="NE.Standard.UI.Graph" ExcludeAssets="runtime" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(InMonorepo)' != 'true'">
+    <PackageReference Include="NE.ChatAI.Plugins" ExcludeAssets="runtime" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="plugin.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

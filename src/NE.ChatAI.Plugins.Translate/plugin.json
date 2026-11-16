@@ -1,0 +1,13 @@
+{
+  "id": "ne-chatai-translate",
+  "name": "Translate",
+  "version": "0.1.0",
+  "description": "Scenario nodes for translating chat drafts and messages (stub).",
+  "author": "AkiEvansDev",
+  "repository": "AkiEvansDev/NE.ChatAI.Plugins.Translate",
+  "entryAssembly": "NE.ChatAI.Plugins.Translate.dll",
+  "minAppVersion": "1.4.0",
+  "tags": [
+    "beta"
+  ]
+}

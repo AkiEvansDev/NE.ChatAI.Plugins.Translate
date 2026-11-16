@@ -1,0 +1,12 @@
+###############################################################################
+# Set default behavior to automatically normalize line endings.
+###############################################################################
+* text=auto
+
+*.sh text eol=lf
+*.cmd text eol=crlf
+
+# Pictures and character cards are never text.
+*.png binary
+*.jpg binary
+*.webp binary

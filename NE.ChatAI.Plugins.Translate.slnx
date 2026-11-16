@@ -1,0 +1,17 @@
+<!-- Copied to the Translate mirror's root as NE.ChatAI.Plugins.Translate.slnx; its paths only resolve there. -->
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/NE.ChatAI.Plugins.Translate/NE.ChatAI.Plugins.Translate.csproj" />
+  </Folder>
+
+  <Folder Name="/solution/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+    <File Path="nuget.config" />
+    <File Path="README.md" />
+  </Folder>
+</Solution>
